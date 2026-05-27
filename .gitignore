@@ -1,0 +1,52 @@
+# ====================================================================
+# Compiled Binaries and Executables
+# ====================================================================
+# Windows executables
+*.exe
+
+# Linux/macOS executable formats & compiled binaries
+*.out
+*.app
+*.bin
+
+# Object files and archive files (intermediate compiler outputs)
+*.o
+*.obj
+*.a
+*.lib
+*.so
+*.dll
+*.dylib
+
+# ====================================================================
+# Development Tools & IDE Clutter
+# ====================================================================
+# Visual Studio Code workspace settings
+.vscode/
+*.code-workspace
+
+# Visual Studio (MSVC) clutter
+.vs/
+*.user
+*.suo
+*.sln
+*.vcxproj
+*.filters
+
+# CLion / JetBrains project files
+.idea/
+cmake-build-debug/
+cmake-build-release/
+
+# ====================================================================
+# Operating System System Files
+# ====================================================================
+# Windows system files
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# macOS system files
+.DS_Store
+.AppleDouble
+.LSOverride
