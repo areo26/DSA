@@ -8,6 +8,7 @@ std::vector<int> bfs(const std::vector<std::vector<int>>& adjMat, int startNode)
     std::queue<int> q;
     std::vector<bool> visited (size, false);
     std::vector<int> traverse;
+    if(startNode + 1 >= size) return traverse;
     q.push(startNode);
     visited[startNode] = true;
 
@@ -30,6 +31,7 @@ std::vector<int> dfs(const std::vector<std::vector<int>>& adjMat, int startNode)
     std::stack<int> s;
     std::vector<bool> visited (size, false);
     std::vector<int> traverse;
+    if(startNode + 1 >= size) return traverse;
     s.push(startNode);
     while(!s.empty()) {
         int node = s.top();
