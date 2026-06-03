@@ -5,7 +5,7 @@
 std::vector<int> shortestPath(std::vector<std::vector<int>>& adjMat, int startNode, int endNode) {
     int size = adjMat.size();
     std::vector<int> path;
-    if(startNode+1 >= size || endNode + 1 >= size) return path;
+    if(startNode < 0 || startNode >= size || endNode < 0 || endNode >= size) return path;
     std::queue<int> q;
     std::vector<bool> visited (size, false);
     std::vector<int> tracker(size, -1);
